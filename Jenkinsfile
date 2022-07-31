@@ -5,10 +5,10 @@ node {
       checkout scm
     }
     stage ('prepare') {
-      sh "npm install -g yarn";
+      bat "C:\Users\esuarez\AppData\Roaming\npm\node_modules\yarn\bin\yarn";
     }
     stage('coverage') {
-      bat "yarn && yarn coverage";
+      bat "yarn coverage";
     }
     stage('SonarQube Analysis') {
       def scannerHome = tool 'sonarqube-scanner';
