@@ -5,6 +5,7 @@
   "scripts": {
     "build": "babel src --out-dir dist",
     "test": "jest",
+    "coverage": "jest --coverage",
     "lint": "eslint --ignore-path .gitignore .",
     "format": "prettier --ignore-path .gitignore --write \"**/*.js\""
   },
@@ -13,7 +14,7 @@
   "license": "MIT",
   "jest": {
     "verbose": true,
-    "testPathIgnorePatterns": ["dist"]
+    "testPathIgnorePatterns": ["dist", "node_modules", "coverage"]
   },
   "devDependencies": {
     "@babel/cli": "^7.18.9",

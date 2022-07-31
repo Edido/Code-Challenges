@@ -4,6 +4,9 @@ node {
     stage('SCM') {
       checkout scm
     }
+    stage('coverage') {
+      bat "yarn && yarn coverage";
+    }
     stage('SonarQube Analysis') {
       def scannerHome = tool 'sonarqube-scanner';
       withSonarQubeEnv() {
