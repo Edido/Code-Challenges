@@ -1,0 +1,15 @@
+{
+  "name": "code-challenges",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Edido/Code-Challenges.git",
+  "author": "edido <esuarez@integ-solutions.cl>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^28.1.6",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "jest": "^28.1.3",
+    "prettier": "^2.7.1"
+  }
+}
