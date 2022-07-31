@@ -11,6 +11,10 @@
   "repository": "https://github.com/Edido/Code-Challenges.git",
   "author": "edido <esuarez@integ-solutions.cl>",
   "license": "MIT",
+  "jest": {
+    "verbose": true,
+    "testPathIgnorePatterns": ["dist"]
+  },
   "devDependencies": {
     "@babel/cli": "^7.18.9",
     "@babel/core": "^7.18.9",
