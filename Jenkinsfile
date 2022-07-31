@@ -7,9 +7,9 @@ node {
     stage ('prepare') {
       bat "yarn";
     }
-    stage('coverage') {
-      bat "yarn coverage";
-    }
+    // stage('coverage') {
+    //   bat "yarn coverage";
+    // }
     stage('SonarQube Analysis') {
       def scannerHome = tool 'sonarqube-scanner';
       withSonarQubeEnv() {
