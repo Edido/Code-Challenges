@@ -4,6 +4,9 @@ node {
     stage('SCM') {
       checkout scm
     }
+    stage ('prepare') {
+      sh "npm install -g yarn";
+    }
     stage('coverage') {
       bat "yarn && yarn coverage";
     }
