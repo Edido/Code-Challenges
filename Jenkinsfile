@@ -1,11 +1,14 @@
 // language: jenkinsfile
 node {
+  environment {
+    PATH = "C:\Users\esuarez\AppData\Roaming\npm\node_modules\yarn\bin\:${env.PATH}"
+  }
   try {
     stage('SCM') {
       checkout scm
     }
     stage ('prepare') {
-      bat "C:\Users\esuarez\AppData\Roaming\npm\node_modules\yarn\bin\yarn";
+      bat "yarn";
     }
     stage('coverage') {
       bat "yarn coverage";
