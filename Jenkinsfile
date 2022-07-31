@@ -1,8 +1,5 @@
 // language: jenkinsfile
 node {
-  environment {
-    PATH = "C:\Users\esuarez\AppData\Roaming\npm\node_modules\yarn\bin\:${env.PATH}"
-  }
   try {
     stage('SCM') {
       checkout scm
