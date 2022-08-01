@@ -19,3 +19,7 @@ test('calc number is not divisible by 3 or 5', function () {
   let result = solve.fizzBuzz(7);
   expect(result).toBe(7);
 });
+
+test ('print result', function () {
+  solve.printResult(100);
+});

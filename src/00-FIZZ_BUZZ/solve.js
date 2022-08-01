@@ -10,4 +10,10 @@ export const solve = {
       return number;
     }
   },
+  printResult: function (number) {
+    for (let i = 1; i <= number; i++) {
+      // eslint-disable-next-line no-console
+      console.log(this.fizzBuzz(i));
+    }
+  }
 };
