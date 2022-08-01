@@ -8,7 +8,7 @@ node {
       bat "yarn";
     }
     stage('coverage') {
-      // bat "yarn coverage";
+      bat "yarn coverage";
     }
     stage('SonarQube Analysis') {
       def scannerHome = tool 'sonarqube-scanner';
